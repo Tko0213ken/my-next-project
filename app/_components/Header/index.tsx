@@ -1,10 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
+import Menu from "../Menu";
 import Styles from "./index.module.css";
 
 export default function Header() {
   return (
     <header className={Styles.header}>
-      <a href="/" className={Styles.logoLink}>
+      <Link href="/" className={Styles.logoLink}>
         <Image
           className={Styles.logo}
           src="/logo.svg"
@@ -13,7 +15,8 @@ export default function Header() {
           height={133}
           priority
         />
-      </a>
+      </Link>
+      <Menu />
     </header>
   );
 }
