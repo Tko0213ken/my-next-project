@@ -1,6 +1,8 @@
 import Hero from "@/app/_components/Hero";
 import Sheet from "@/app/_components/sheet";
 
+export const revalidate = 60;
+
 type Props = {
   children: React.ReactNode;
 };
